@@ -26,4 +26,4 @@ RUN composer update && npm update
 RUN php artisan migrate:install
 RUN php artisan migrate --force
 RUN php artisan db:seed --force
-EXPOSE 80/tcp
+EXPOSE 81/tcp
