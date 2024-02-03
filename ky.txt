@@ -1,0 +1,23 @@
+
+   ErrorException  : file_get_contents(/home/abdo_arh36/webdemy/.env): failed to open stream: No such file or directory
+
+  at /home/abdo_arh36/webdemy/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:96
+     92|     {
+     93|         file_put_contents($this->laravel->environmentFilePath(), preg_replace(
+     94|             $this->keyReplacementPattern(),
+     95|             'APP_KEY='.$key,
+  >  96|             file_get_contents($this->laravel->environmentFilePath())
+     97|         ));
+     98|     }
+     99| 
+    100|     /**
+
+  Exception trace:
+
+  1   file_get_contents()
+      /home/abdo_arh36/webdemy/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:96
+
+  2   Illuminate\Foundation\Console\KeyGenerateCommand::writeNewEnvironmentFileWith()
+      /home/abdo_arh36/webdemy/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:80
+
+  Please use the argument -v to see more details.
